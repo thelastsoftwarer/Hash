@@ -1,0 +1,24 @@
+import java.util.HashMap;
+
+public class hashmap {
+
+	public static void main(String[] args) {
+		int a=5;
+		int b=7;
+		int c=8;														
+		HashMap<String,Integer> fun=new HashMap<String,Integer>();
+		fun.put("a", 5);
+		fun.put("b", 7);
+		fun.put("c", 8);
+		System.out.println(fun.get("b"));
+		fun.remove("b");
+		System.out.println(fun);
+		fun.put("b", 8);
+		System.out.println(fun);
+		fun.replace("b", 9);
+		System.out.println(fun);
+		System.out.println(fun.containsValue(8));
+		
+	}  
+
+}
