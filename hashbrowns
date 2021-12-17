@@ -1,0 +1,35 @@
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class Hashbrowns {
+
+	public static void main(String[] args) {
+		HashSet<String> h=new HashSet<String>();
+		h.add("erkan");
+		h.add("furkan");
+		h.add("derin");
+		h.add("orangutan");
+		System.out.println(h);
+		h.remove("orangutan");
+		System.out.println(h);
+		System.out.println(h.contains("erkan"));
+		HashSet<Integer> i=new HashSet<Integer>();
+		i.add(1);
+		i.add(3);
+		i.add(5);
+		i.add(7);
+		i.toArray();
+		System.out.println(i);
+		Object[] a=i.toArray();
+		System.out.println(a[2]);
+		System.out.println(i.hashCode());
+		
+		Iterator<Integer> z=i.iterator();
+		while(z.hasNext()) {
+			System.out.println(z.next());
+			
+		}
+
+	}
+
+}
